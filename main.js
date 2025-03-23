@@ -1,15 +1,14 @@
 const app = document.getElementById("app");
 
-function Header() {
-  return <h1> Develop Preview.. Ship...</h1>;
+function Header({ title }) {
+  return <h1>{title ? title : "Default Title"}</h1>;
 }
 
 function HomePage() {
   return (
     <div>
-      {/*Nesting*/}
-      <Header />
-      <Header />
+      <Header title="React" />
+      <Header title="A new title" />
     </div>
   );
 }
