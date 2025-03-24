@@ -12,10 +12,6 @@ function HomePage() {
     setLikes(likes + 1);
   }
 
-  function resetClicks() {
-    setLikes(0);
-  }
-
   return (
     <div>
       <Header title="Develop. Preview. Shio" />
@@ -25,7 +21,6 @@ function HomePage() {
         ))}
       </ul>
       <button onClick={handleClick}>Like({likes})</button>
-      <button onClick={resetClicks}>Reset</button>
     </div>
   );
 }
