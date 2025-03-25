@@ -1,4 +1,4 @@
-const app = document.getElementById("app");
+import {useState} from 'react';
 
 function Header({ title }) {
   return <h1>{title ? title : "Default Title"}</h1>;
@@ -25,5 +25,3 @@ function HomePage() {
   );
 }
 
-const root = ReactDOM.createRoot(app);
-root.render(<HomePage />);
